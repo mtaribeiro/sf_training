@@ -29,6 +29,8 @@ exports.config = {
     ],
     suites : {
         wdioexample : ['./test/example.e2e.js'],
+        connect2 : ['./test/connect2/*',
+            './test/example.e2e.js'],
     },
     //
     // ============
@@ -73,7 +75,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'warn',
     //
     // Set specific log levels per logger
     // loggers:
