@@ -5,7 +5,7 @@ const Page = require('./page');
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Page {
+class ForgotPw extends Page {
     /**
      * define selectors using getter methods
      */
@@ -35,8 +35,8 @@ class LoginPage extends Page {
      * overwrite specific options to adapt it to page object
      */
     open () {
-        return super.openUrl('login');
+        return super.open('forgot_password');
     }
 }
 
-module.exports = new LoginPage();
+module.exports = new ForgotPw();

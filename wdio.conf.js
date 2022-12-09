@@ -30,7 +30,8 @@ exports.config = {
     suites : {
         wdioexample : ['./test/example.e2e.js'],
         connect2 : ['./test/connect2/*',
-            './test/example.e2e.js'],
+            './test/example.e2e.js',
+        './test/connect/**/*'],
     },
     //
     // ============

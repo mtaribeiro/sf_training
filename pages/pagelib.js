@@ -3,7 +3,7 @@
 module.exports= class PageLib {
 
   // open a page
-  open (path) {
+  openUrl (path) {
     return browser.url(path)
   }
 }

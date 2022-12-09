@@ -7,13 +7,13 @@ describe('storefront suite', () => {
     // open storefront page
     storefront.openStorefrontPage('chicos');
     expect(browser).toHaveUrlContaining(`https://${storefront.retailerName}-qa05.salesfloor.net`);
-    expect(storefront.retailerHeadLogo.isDisplayed).toBeTruthy();
+    expect(storefront.retailerHeadLogo.isDisplayed()).toBeTruthy();
 
     // check if new arrivals section is displayed
     expect(storefront.newArriveSection.isDisplayed()).toBeTruthy();
 
     // check the title of new arrivals 
-    expect(storefront.newArriveSection.getText()).toEqual('NEW ARRIVALS');
+    expect(storefront.newArriveSection.getText()).toEqual('NEW ARRIVALS111');
     
     // count top picks products displayed
     expect(storefront.topPicksProducts.length).toEqual(8) ;

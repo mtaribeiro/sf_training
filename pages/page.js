@@ -10,4 +10,11 @@ module.exports = class Page {
     open (path) {
         return browser.url(`https://the-internet.herokuapp.com/${path}`)
     }
+
+  /** open url page
+   * @param {string} path - url address
+  */
+   openUrl(path) {
+        return browser.url(path);
+    }
 }

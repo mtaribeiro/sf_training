@@ -32,7 +32,7 @@ class Storefront extends PageLib {
 
   openStorefrontPage(retailer) {
     this.retailerName = retailer;
-    this.open(`https://${retailer}-qa05.salesfloor.net/test_rep1`);
+    this.openUrl(`https://${retailer}-qa05.salesfloor.net/test_rep1`);
   }
 
   // click on search button
@@ -43,7 +43,9 @@ class Storefront extends PageLib {
   // type and click on Go search
   typeAndSearchBy(searchTxt) {
     this.searchImputFld.setValue(searchTxt);
-    this.goSearchBtn.click()
+    browser.pause(5000);
+    this.goSearchBtn.click();
+    browser.pause(5000);
   }
 
   // do a search
